@@ -1,0 +1,176 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff5f8 0%, #ffe6f0 100%);
+  color: #9c1b51;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1, h2 {
+  color: #d63384;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #f06292;
+  margin-bottom: 30px;
+}
+
+section {
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(255, 128, 171, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 25px rgba(255, 105, 180, 0.25);
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* Botões */
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 12px 30px;
+  transition: all 0.4s ease;
+}
+
+/* Botão Colorido */
+.botao1 {
+  background-color: #ff80ab;
+  color: white;
+}
+
+.botao1:hover {
+  background-color: #f8bbd0;
+  transform: scale(1.05);
+}
+
+/* Crescendo */
+.botao2 {
+  background-color: #ec407a;
+  color: white;
+  transition: transform 0.4s ease;
+}
+
+.botao2:hover {
+  transform: scale(1.2);
+}
+
+/* Botão com Atraso */
+.botao3 {
+  background-color: #fff;
+  color: #e91e63;
+  border: 2px solid #e91e63;
+  transition: all 0.4s ease 0.5s;
+}
+
+.botao3:hover {
+  background-color: #e91e63;
+  color: white;
+  border-color: #f8bbd0;
+}
+
+/* Cartão */
+.card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  background-color: #ffe6f0;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.25);
+}
+
+/* Texto Interativo */
+p {
+  margin: 10px 0;
+  transition: color 0.4s, font-size 0.4s;
+}
+
+p:hover {
+  color: #e91e63;
+  font-size: 1.1rem;
+}
+
+.delay {
+  transition-delay: 0.5s;
+}
+
+/* Imagem com Zoom */
+.zoom {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.zoom:hover {
+  transform: scale(1.15);
+}
+
+/* Menu Interativo */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+nav a {
+  position: relative;
+  color: #d81b60;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #f06292;
+  transition: width 0.4s ease;
+}
+
+nav a:hover {
+  color: #f48fb1;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
